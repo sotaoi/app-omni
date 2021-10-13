@@ -1,6 +1,6 @@
-import { Config } from '@sotaoi/config';
+const { Config } = require('@sotaoi/config');
 
-export = {
+module.exports = {
   name: Config.get('APP_NAME'),
   package_name: Config.get('PACKAGE_NAME'),
   bundle_secret: Config.get('APP_BUNDLE_SECRET'),

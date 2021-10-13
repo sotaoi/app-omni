@@ -1,6 +1,6 @@
-import { Config } from '@sotaoi/config';
+const { Config } = require('@sotaoi/config');
 
-export = {
+module.exports = {
   connection: {
     host: Config.get('DB_HOST'),
     user: Config.get('DB_USERNAME'),

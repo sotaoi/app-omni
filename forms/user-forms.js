@@ -1,7 +1,8 @@
-import { FormValidations } from '@sotaoi/omni/input';
-import { validations } from '@sotaoi/omni/forms/validations';
+// const { FormValidations } = require(' @sotaoi/omni/input');
+const { validations } = require(' @sotaoi/omni/forms/validations');
 
-const user: { [key: string]: () => Promise<FormValidations> } = {
+// const user: { [key: string]: () => Promise<FormValidations> } = {
+const user = {
   'user-register-form': async () => ({
     email: [...validations.user.email, { method: 'required' }],
     name: [...validations.user.name],
@@ -22,4 +23,4 @@ const user: { [key: string]: () => Promise<FormValidations> } = {
   }),
 };
 
-export { user };
+module.exports = { user };

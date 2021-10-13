@@ -1,6 +1,6 @@
 //
 
-const configs: { [key: string]: any } = {};
+const configs = {};
 
 try {
   const Config = require('@sotaoi/config').Config;
@@ -18,7 +18,7 @@ try {
   const fs = require('fs');
   const path = require('path');
   const configPath = path.resolve(path.dirname(require.resolve('@app/omni/package.json')), 'config');
-  fs.readdirSync(configPath).map((configFile: string) => {
+  fs.readdirSync(configPath).map((configFile) => {
     const extname = path.extname(configFile);
     const basename = path.basename(configFile, extname);
     const config = require(path.resolve(configPath, extname !== 'json' ? basename : configFile));
@@ -28,14 +28,14 @@ try {
   // do nothing
 }
 
-const config = (key: string): any => {
+const config = (key) => {
   try {
     const keyArray = key.toLowerCase().split('.');
-    const file: string | undefined = keyArray.shift();
+    const file = keyArray.shift();
     if (!file) {
       return null;
     }
-    let cfg: any = configs[file];
+    let cfg = configs[file];
     if (!cfg) {
       return null;
     }
