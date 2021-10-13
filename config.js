@@ -51,4 +51,4 @@ const config = (key) => {
   }
 };
 
-export { config };
+module.exports = { config };
