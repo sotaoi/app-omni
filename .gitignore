@@ -1,3 +1,5 @@
+/certs/*
+!/certs/.gitkeep
 **/node_modules/**
 /.env
 /env.json
