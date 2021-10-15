@@ -1,4 +1,4 @@
-// const { FormValidations } = require('@sotaoi/omni/input');
+// const { FormValidations } = require('@sotaoi/omni/input/base-input');
 const { validations } = require('@sotaoi/omni/forms/validations');
 
 // const user: { [key: string]: () => Promise<FormValidations> } = {
