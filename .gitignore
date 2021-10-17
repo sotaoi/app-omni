@@ -3,3 +3,7 @@
 **/node_modules/**
 /.env
 /env.json
+
+/deployment/*
+!/deployment/.gitkeep
+/tmp.deployment/*
