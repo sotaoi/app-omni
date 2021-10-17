@@ -39,6 +39,11 @@ const main = async () => {
     },
   );
   fs.rmdirSync(path.resolve('./deployment/.git'), { recursive: true });
+
+  execSync('npm install --force git+https://github.com/sotaoi/omni#0.9.1', {
+    cwd: path.resolve('./deployment'),
+    stdio: 'inherit',
+  });
 };
 
 main();
