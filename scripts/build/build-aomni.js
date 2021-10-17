@@ -5,7 +5,7 @@ const { buildAomniRoutine } = require('@app/omni/scripts/routines/build-aomni-ro
 const main = async () => {
   //
 
-  await buildAomniRoutine(true);
+  await buildAomniRoutine(false);
 
   //
 };
