@@ -9,8 +9,8 @@
   "scripts": {
     "bootstrap": "npm install --no-audit --no-fund",
     "bootstrap:prod": "npm install --production --no-audit --no-fund",
-    "todel:deploy:aomni": "node ./scripts/deploy/deploy-aomni",
-    "todel:clean:aomni": "node ./scripts/clean/clean-aomni"
+    "deploy:aomni": "node ./scripts/deploy/deploy-aomni",
+    "clean:aomni": "node ./scripts/clean/clean-aomni"
   },
   "peerDependencies": {
     "@sotaoi/omni": "git+https://github.com/sotaoi/omni#0.9.1"
