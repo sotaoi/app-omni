@@ -46,14 +46,6 @@ const buildAomniRoutine = async (deploy) => {
     );
   deploy && fs.rmdirSync(path.resolve('./deployment/.git'), { recursive: true });
 
-  execSync('npm run build:somni', { cwd: path.resolve('../packages/sotaoi-omni'), stdio: 'inherit' });
-  Helper.copyRecursiveSync(
-    fs,
-    path,
-    path.resolve('../packages/sotaoi-omni/deployment'),
-    path.resolve('./deployment/node_modules/@sotaoi/omni'),
-  );
-
   //
 };
 
