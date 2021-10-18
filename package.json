@@ -11,8 +11,7 @@
     "bootstrap:prod": "npm install --production --no-audit --no-fund",
     "build:aomni": "node ./scripts/build/build-aomni",
     "deploy:aomni": "node ./scripts/deploy/deploy-aomni",
-    "clean:aomni": "node ./scripts/clean/clean-aomni",
-    "postinstall": "node ./scripts/hook/hook-postinstall"
+    "clean:aomni": "node ./scripts/clean/clean-aomni"
   },
   "peerDependencies": {
     "@sotaoi/omni": "git+https://github.com/sotaoi/omni#0.9.1"
