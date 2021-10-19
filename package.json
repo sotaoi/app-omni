@@ -11,6 +11,7 @@
     "bootstrap:prod": "npm install --production --no-audit --no-fund",
     "build:aomni": "node ./scripts/build/build-aomni",
     "deploy:aomni": "node ./scripts/deploy/deploy-aomni",
+    "clean:bootstrap": "node ./scripts/clean/clean-bootstrap",
     "clean:aomni": "node ./scripts/clean/clean-aomni"
   },
   "peerDependencies": {
@@ -22,7 +23,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.8.4",
-    "@sotaoi/config": "^0.9.1",
+    "@sotaoi/config": "git+https://github.com/sotaoi/config#0.9.1",
     "@types/node": "^14"
   }
 }
