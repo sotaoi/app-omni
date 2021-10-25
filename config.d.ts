@@ -5,5 +5,6 @@ declare const init: (
   path: any,
   extraVars: { [key: string]: string },
 ) => void;
+declare const env: (envvar: undefined | null | string) => null | string | boolean | { [key: string]: any };
 
-export { config, init };
+export { config, init, env };
